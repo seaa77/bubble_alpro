@@ -16,11 +16,11 @@ int main()
     {
         for(int y=0;y<7;y++)
         {
-            if(arr[y]>arr[y+1])
+            if(arr[y+1]>arr[y]) //descending
             {
-                temp=arr[y];
-                arr[y]=arr[y+1];
-                arr[y+1]=temp;
+                temp=arr[y+1];
+                arr[y+1]=arr[y];
+                arr[y]=temp;
             }
         }
     }
